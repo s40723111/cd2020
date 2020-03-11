@@ -12,3 +12,65 @@
 <h1>Develop</h1>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
+<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<h1>week1</h1>
+<p>創<span style="color: #ff0000;"><a href="https://github.com/s40723111/cd2020" style="color: #ff0000;">cd2020的倉儲</a></span></p>
+<p>創<span style="color: #ff0000;"><a href="https://s40723111.github.io/cd2020/content/index.html" style="color: #ff0000;">網站</a> </span></p>
+<p><span style="color: #000000;">步驟:</span></p>
+<ol>
+<li><span style="color: #000000;">登入自己得<a href="https://github.com/">gihub</a> 建立新的<span>倉儲名字叫</span>cd2020</span></li>
+<li>接著執行git clone <a href="https://github.com/s40723111/cd2020">https://github.com/s40723111/cd2020</a> (自己的網址)</li>
+<li>執行git submodule add <a href="https://github.com/mdecourse/cmsimde.git取得子模組資料">https://github.com/mdecourse/cmsimde.git</a> 取得子模組資料</li>
+<li>將cmsimde&gt;up_dir裡的所有項目全部複製到外面cd2020裡面</li>
+<li>之後cd cmsimde 輸入python -m pip install flask_cors更改模組</li>
+<li>接著就能執行python wsgi.py編輯靜態網站</li>
+</ol><h1>week2</h1>
+<p>將python 3.7.3更新至3.8.2</p>
+<p>1.<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>在這個網站上下載</p>
+<p><a href="https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe">Windows x86-64 executable installer</a>安裝至自己可攜系統(把pip的選項去掉)。</p>
+<p><img caption="false" height="308" src="/images/bandicam 2020-03-11 19-47-16-328.jpg" width="500"/></p>
+<p>2.使用批次檔更改開始路徑，使用<span>Scite.exe 編輯器將原本的py373更改成新的3.8.2版本的路徑</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+subst %Disk%: "data"
+
+%Disk%:
+
+set HomePath=%Disk%:\home_mdecourse
+set HomeDrive=%Disk%:\home_mdecourse
+set Home=%Disk%:\home_mdecourse
+set USERPROFILE=%Disk%:\home_mdecourse
+
+REM 將系統 Python 程式的 io 設為 utf-8
+set PYTHONIOENCODING="utf-8"
+
+set PYTHONPATH=%Disk%:\py382\DLLs;%Disk%:\py382\Lib;%Disk%:\py382\Lib\site-packages;
+set PYTHONHOME=%Disk%:\py382
+
+set path_python=%Disk%:\py382;%Disk%:\py382\Scripts;
+set path_msys2=%Disk%:\msys64\mingw64\bin;
+REM coreutils is for compiling fossil scm
+set path_coreutils=%Disk%:\coreutils-5.3.0\bin;%Disk%:\depends22_x64;
+set path_tcc=%Disk%:\tcc;
+set path_cmake=%Disk%:\cmake-3.10.1-win64-x64\bin;
+set path_nodejs=Disk%:\nodejs;%Disk%:\nodejs\appdata\roaming\npm;
+set path_git=%Disk%:\portablegit\bin;
+set path_xming=%Disk%:\Xming;
+set path_latex=%%Disk%:\Pandoc;%Disk%:\TinyTeX\bin\win32;
+
+path=%Disk%:;%path_python%;%path_msys2%;%path_tcc%;%path_git%;%path_cmake%;%path_coreutils%;
+
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+
+start /MIN %Disk%:\wscite415\wscite\SciTE.exe
+start /MIN %Disk%:\wscite415\wscite\SciTE.exe
+
+Exit</pre>
+<p><span>3.執行get-pip.py (取得安裝管理工具)</span></p>
+<p><span><img caption="false" height="360" src="/images/bandicam 2020-03-11 20-09-44-429.jpg" width="600"/></span></p>
+<p><span>4.執行pip install指令將Flask，Markdown，lxml，bs4，flask_cors，pelican，leo</span></p>
+<p><span>這些3.8.2版本缺少的模組安裝下來。</span></p>
+<p><span><img caption="false" height="360" src="/images/bandicam 2020-03-11 20-10-06-961.jpg" width="600"/></span></p>

@@ -154,18 +154,18 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='Develop.html'>Next</a> >> Develop<br /><h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<br /> <a href='Develop.html'>Next</a> >> Develop</div>
+    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <a href='week2.html'>Next</a> >> week2<br /><h1>week1</h1>
+<p>創<span style="color: #ff0000;"><a href="https://github.com/s40723111/cd2020" style="color: #ff0000;">cd2020的倉儲</a></span></p>
+<p>創<span style="color: #ff0000;"><a href="https://s40723111.github.io/cd2020/content/index.html" style="color: #ff0000;">網站</a> </span></p>
+<p><span style="color: #000000;">步驟:</span></p>
+<ol>
+<li><span style="color: #000000;">登入自己得<a href="https://github.com/">gihub</a> 建立新的<span>倉儲名字叫</span>cd2020</span></li>
+<li>接著執行git clone <a href="https://github.com/s40723111/cd2020">https://github.com/s40723111/cd2020</a> (自己的網址)</li>
+<li>執行git submodule add <a href="https://github.com/mdecourse/cmsimde.git取得子模組資料">https://github.com/mdecourse/cmsimde.git</a> 取得子模組資料</li>
+<li>將cmsimde&gt;up_dir裡的所有項目全部複製到外面cd2020裡面</li>
+<li>之後cd cmsimde 輸入python -m pip install flask_cors更改模組</li>
+<li>接著就能執行python wsgi.py編輯靜態網站</li>
+</ol><br />Develop << <a href='Develop.html'>Previous</a> <a href='week2.html'>Next</a> >> week2</div>
         
     <!-- footer -->
       <div class="container">
