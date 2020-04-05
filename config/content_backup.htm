@@ -13,7 +13,8 @@
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>week1</h1>
+<h1>week</h1>
+<h2>w1</h2>
 <p>創<span style="color: #ff0000;"><a href="https://github.com/s40723111/cd2020" style="color: #ff0000;">cd2020的倉儲</a></span></p>
 <p>創<span style="color: #ff0000;"><a href="https://s40723111.github.io/cd2020/content/index.html" style="color: #ff0000;">網站</a> </span></p>
 <p><span style="color: #000000;">步驟:</span></p>
@@ -24,7 +25,8 @@
 <li>將cmsimde&gt;up_dir裡的所有項目全部複製到外面cd2020裡面</li>
 <li>之後cd cmsimde 輸入python -m pip install flask_cors更改模組</li>
 <li>接著就能執行python wsgi.py編輯靜態網站</li>
-</ol><h1>week2</h1>
+</ol>
+<h2>w2</h2>
 <p>將python 3.7.3更新至3.8.2</p>
 <p>1.<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>在這個網站上下載</p>
 <p><a href="https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe">Windows x86-64 executable installer</a>安裝至自己可攜系統(把pip的選項去掉)。</p>
@@ -71,6 +73,196 @@ start /MIN %Disk%:\wscite415\wscite\SciTE.exe
 Exit</pre>
 <p><span>3.執行get-pip.py (取得安裝管理工具)</span></p>
 <p><span><img caption="false" height="360" src="/images/bandicam 2020-03-11 20-09-44-429.jpg" width="600"/></span></p>
-<p><span>4.執行pip install指令將Flask，Markdown，lxml，bs4，flask_cors，pelican，leo</span></p>
-<p><span>這些3.8.2版本缺少的模組安裝下來。</span></p>
-<p><span><img caption="false" height="360" src="/images/bandicam 2020-03-11 20-10-06-961.jpg" width="600"/></span></p>
+<p><span>4.執行pip install指令將</span></p>
+<p><strong>Flask</strong></p>
+<p><strong>Markdown</strong></p>
+<p><strong>lxml</strong></p>
+<p><strong>bs4</strong></p>
+<p><strong>flask_cors</strong></p>
+<p><strong>pelican</strong></p>
+<p><strong>leo</strong></p>
+<p><span>這些3.8.2版本缺少的模組依序安裝下來。</span></p>
+<p><br/><br/><span><img caption="false" height="360" src="/images/bandicam 2020-03-11 20-10-06-961.jpg" width="600"/></span></p>
+<h2>w4</h2>
+<p>更新至倉儲3.8.2後，launchLeo.py會無法執行</p>
+<p>解決方式:</p>
+<p>1.開啟start_mdecourse.bat</p>
+<p>2.進入SCiTE程式編輯器，點選Options，點選<span>open python properties</span></p>
+<p><img alt="" height="751" src="/images/5555.png" width="500"/></p>
+<p>4.使用ctrl+H功能，將py373取代為<span>python3.8.2的資料夾名稱(我的是py382)</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># Define SciTE settings for Python files.
+
+file.patterns.py=*.py;*.pyw;*.pyx;*.pxd;*.pxi
+file.patterns.scons=SConstruct;SConscript
+
+*source.patterns.python=$(file.patterns.py);
+
+shbang.python=py
+
+filter.python=Python (py pyw)|$(file.patterns.py)|
+
+*filter.python=$(filter.python)
+
+lexer.$(file.patterns.py)=python
+lexer.$(file.patterns.scons)=python
+
+*language.python=Pytho&amp;n|py||
+
+keywordclass.python2=and as assert break class continue def del elif \
+else except exec finally for from global if import in is lambda not \
+or pass print raise return try while with yield
+
+keywordclass.python3=False None True and as assert break class continue \
+def del elif else except finally for from global if import in is lambda \
+nonlocal not or pass raise return try while with yield
+
+keywordclass.python=$(keywordclass.python2)
+
+# Extra keywords for cython
+keywordclass.cython=cdef cimport cpdef
+
+keywords.$(file.patterns.py)=$(keywordclass.python) $(keywordclass.cython)
+keywords.$(file.patterns.scons)=$(keywordclass.python)
+
+# If you uncomment the 3 lines below,
+# and put some words after "keywordclass2.python=",
+# those words will be styled by style.python.14
+
+#keywordclass2.python=
+#keywords2.$(file.patterns.py)=$(keywordclass2.python)
+#keywords2.$(file.patterns.scons)=$(keywordclass2.python)
+
+# Use 2 sets of substyles to highlight standard library modules and
+# imports from the future.
+# Additional identifier sets can be added by incrementing the  next
+# line's value and adding extra definitions similar to below.
+substyles.python.11=2
+
+substylewords.11.1.$(file.patterns.py)=\
+__main__ _dummy_thread _thread abc aifc argparse \
+array ast asynchat asyncio asyncore atexit audioop \
+base64 bdb binascii binhex bisect builtins bz2 \
+calendar cgi cgitb chunk cmath cmd code codecs \
+codeop collections colorsys compileall concurrent \
+configparser contextlib copy copyreg crypt csv \
+ctypes curses datetime dbm decimal difflib dis \
+distutils dummy_threading email ensurepip enum \
+errno faulthandler fcntl filecmp fileinput fnmatch \
+formatter fpectl fractions ftplib functools gc getopt \
+getpass gettext glob grp gzip hashlib heapq hmac \
+html http http imaplib imghdr importlib inspect io \
+ipaddress itertools json keyword linecache locale \
+logging lzma macpath mailbox mailcap marshal math \
+mimetypes mmap modulefinder msilib msvcrt \
+multiprocessing netrc nis nntplib numbers operator \
+os os ossaudiodev parser pathlib pdb pickle \
+pickletools pipes pkgutil platform plistlib poplib posix \
+pprint pty pwd py_compile pyclbr queue quopri \
+random re readline reprlib resource rlcompleter runpy \
+sched select selectors shelve shlex shutil signal site \
+smtpd smtplib sndhdr socket socketserver spwd \
+sqlite3 ssl stat statistics string stringprep struct \
+subprocess sunau symbol symtable sys sysconfig \
+syslog tabnanny tarfile telnetlib tempfile termios \
+textwrap threading time timeit tkinter token \
+tokenize trace traceback tracemalloc tty turtle \
+types unicodedata unittest urllib uu uuid venv warnings \
+wave weakref webbrowser winreg winsound wsgiref \
+xdrlib xml xmlrpc zipfile zipimport zlib
+style.python.11.1=fore:#DD9900
+
+substylewords.11.2.$(file.patterns.py)=__future__ \
+with_statement unicode_literals print_function
+style.python.11.2=fore:#EE00AA,italics
+
+#~ statement.indent.$(file.patterns.py)=10 :
+statement.indent.$(file.patterns.py)=5 class def elif else except finally \
+for if try while with
+
+statement.lookback.$(file.patterns.py)=0
+block.start.$(file.patterns.py)=
+block.end.$(file.patterns.py)=
+
+view.indentation.examine.*.py=2
+
+tab.timmy.whinge.level=1
+
+#fold.quotes.python=1
+
+comment.block.python=#~
+
+indent.python.colon=1
+
+# Python styles
+# White space
+style.python.0=fore:#808080
+# Comment
+style.python.1=fore:#007F00,$(font.comment)
+# Number
+style.python.2=fore:#007F7F
+# String
+style.python.3=fore:#7F007F,$(font.monospace)
+# Single quoted string
+style.python.4=fore:#7F007F,$(font.monospace)
+# Keyword
+style.python.5=fore:#00007F,bold
+# Triple quotes
+style.python.6=fore:#7F0000
+# Triple double quotes
+style.python.7=fore:#7F0000
+# Class name definition
+style.python.8=fore:#0000FF,bold
+# Function or method name definition
+style.python.9=fore:#007F7F,bold
+# Operators
+style.python.10=bold
+# Identifiers
+style.python.11=
+# Comment-blocks
+style.python.12=fore:#7F7F7F
+# End of line where string is not closed
+style.python.13=fore:#000000,$(font.monospace),back:#E0C0E0,eolfilled
+# Highlighted identifiers
+style.python.14=fore:#407090
+# Decorators
+style.python.15=fore:#805000
+# F-String
+style.python.16=fore:#7F007F,$(font.monospace)
+# Single quoted f-string
+style.python.17=fore:#7F007F,$(font.monospace)
+# Triple quoted f-string
+style.python.18=fore:#7F0000
+# Triple double quoted f-string
+style.python.19=fore:#7F0000
+# Matched Operators
+style.python.34=fore:#0000FF,bold
+style.python.35=fore:#FF0000,bold
+# Braces are only matched in operator style
+braces.python.style=10
+
+if PLAT_WIN
+	command.go.*.py=y:\py382\pythonw -u "$(FileNameExt)"
+	command.go.subsystem.*.py=1
+	command.go.*.pyw=y:\pythonw -u "$(FileNameExt)"
+	command.go.subsystem.*.pyw=1
+	command.build.SConscript=scons.bat --up .
+	command.build.SConstruct=scons.bat .
+
+if PLAT_GTK
+	command.go.*.py=y:\py382\python -u "$(FileNameExt)"
+	command.build.SConscript=scons --up .
+	command.build.SConstruct=scons .
+
+if PLAT_MAC
+	command.go.*.py=python -u "$(FileNameExt)"
+	command.build.SConscript=scons --up .
+	command.build.SConstruct=scons .
+
+command.name.1.$(file.patterns.py)=Syntax Check
+command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r'$(FilePath)')"
+</pre>
+<p><span>5.最後將launchleo.py檔案放入SciTE編輯器就能夠順利開啟leo Editor</span></p>
+<h1>直播紀錄</h1>
+<p>w2</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/e89PLiLRle8" width="560"></iframe></p>
+<p></p>
