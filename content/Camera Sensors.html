@@ -154,12 +154,47 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w6 << <a href='w6.html'>Previous</a> <a href='Webot.html'>Next</a> >> Webot<br /><h1>直播紀錄</h1>
-<p>w2</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/e89PLiLRle8" width="560"></iframe></p>
-<p>w4</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/-MoaduLrKiI" width="560"></iframe></p>
-<br />w6 << <a href='w6.html'>Previous</a> <a href='Webot.html'>Next</a> >> Webot</div>
+    <div id="tipue_search_content">Webot << <a href='Webot.html'>Previous</a> <a href='DistanceSensor Sensors.html'>Next</a> >> DistanceSensor Sensors<br /><h1>Camera Sensors</h1>
+<p><span>對於大多數應用程序而言，添加通用的</span><span>Camera</span><span>節點就足夠了。通用相機是可自定義的（分辨率，視野，噪點等），默認情況下包括變焦和聚焦機制。提供特殊效果，例如運動模糊，各種噪聲模型，鏡頭畸變和使用球形投影。</span><span><span>除了添加通用的</span></span><span><span>Camera</span></span><span><span>節點外，Webot中還提供了一些預定義的Camera模型。</span></span></p>
+<p><strong>Smart Camera</strong></p>
+<p><span>如果將識別</span><span>節點添加到相機，則相機不僅可以返回圖像，而且還可以返回相機圖像中檢測到的所有對象及其大小和位置。因此，模擬諸如Mobileye之類的智能相機非常容易。</span></p>
+<figure name="smart-camera-output"><img alt="smart_camera.png" src="https://raw.githubusercontent.com/cyberbotics/webots/master/docs/guide/images/sensors/smart_camera.png"/>
+<figcaption class="anchor-header"></figcaption>
+<figcaption class="anchor-header"><strong>MultiSense S21</strong></figcaption>
+<figcaption class="anchor-header"><strong></strong></figcaption>
+<figcaption class="anchor-header">
+<p><span>它</span><code>MultiSense S21</code><span>是基於立體相機的距離傳感器。</span></p>
+<p><span><span>我們的傳感器模型包括多個Webots設備。</span></span></p>
+<p><span></span><code>IntertialUnit</code><span><span>存在</span><span>內部</span><span>設備以獲取設備的側傾，俯仰和偏航角。</span><span>可以使用Webots<span> </span></span></span><span><span>相機</span></span><span><span>獨立檢索立體相機的左右RGB圖像</span><span>。</span><span>或者，</span><span>可以在</span><span>設備</span><span>中央啟用</span><span>RGB<span> </span></span></span><span><span>相機</span></span><span><span>和</span></span><span><span>RangeFinder</span></span><span></span><code>MultiSense S21</code><span><span>設備。</span><span>存在這兩個“元”設備以模仿由真實設備生成的3D彩色點的雲。</span></span></p>
+<p><span><span>可以</span></span><code>MultiSenseS21.name</code><span><span>使用</span></span><span><span>下表</span></span><span><span>從該</span><span>字段</span><span>計算用於從控制器檢索設備的內部設備名稱</span><span>：</span></span></p>
+<figure name="internal-devices-names"><img caption="false" height="213" src="./../images/55.png" width="600"/><br/>
+<figcaption class="anchor-header"></figcaption>
+<figcaption class="anchor-header"></figcaption>
+</figure>
+<p> </p>
+<figure name="multisenses21-stereoscopic-camera">        <img alt="multisense_s21.png" src="https://raw.githubusercontent.com/cyberbotics/webots/master/docs/guide/images/sensors/multisense_s21.thumbnail.png"/>
+<figcaption class="anchor-header"></figcaption>
+<figcaption class="anchor-header">
+<figure name="multisenses21-stereoscopic-camera">
+<figcaption class="anchor-header">                    MultiSenseS21 stereoscopic camera</figcaption>
+<figcaption class="anchor-header"></figcaption>
+<figcaption class="anchor-header"></figcaption>
+</figure>
+<pre><code><img alt="" height="392" src="./../images/444.png" width="500"/><br/></code></pre>
+<p><span>該</span><code>name</code><span>字段定義</span><code>MultiSenseS21</code><span>名稱，並用於計算內部設備名稱</span><span>。</span></p>
+<p><span><span>該</span></span><code>cameraWidth</code><span><span>和</span></span><code>cameraHeight</code><span><span>字段指定所有內部渲染設備（即分辨率</span></span><span><span>相機</span></span><span><span>和</span></span><span><span>測距儀</span></span><span><span>）。</span></span></p>
+<p><span><span>該</span></span><code>cameraFieldOfView</code><span><span>字段指定所有內部渲染設備的水平視場。</span></span></p>
+<p><span><span>該</span></span><code>cameraNoise</code><span><span>字段指定所有內部渲染設備的噪聲（參見</span></span><code>Camera.noise</code><span><span>）。</span></span></p>
+<p><span><span>該</span></span><code>rangeFinderNoise</code><span><span>字段指定內部meta RangeFinder的噪聲（參見</span></span><code>RangeFinder.noise</code><span><span>）。</span></span></p>
+<p><span><span>該</span></span><code>rangeFinderMaxRange</code><span><span>字段指定內部meta RangeFinder的最大範圍（參見</span></span><code>RangeFinder.maxRange</code><span><span>）。</span></span></p>
+<p><span><span>的</span></span><code>leftCamera</code><span><span>，</span></span><code>rightCamera</code><span><span>，</span></span><code>metaCamera</code><span><span>和</span></span><code>metaRangeFinder</code><span><span>字段允許以使相應的內部再現設備。</span></span></p>
+<p><span><span>該</span></span><code>enablePhysics</code><span><span>字段指定傳感器是否應受物理影響（質量= 1.5 [kg]）。</span></span></p>
+<p></p>
+</figcaption>
+</figure>
+</figcaption>
+<figcaption class="anchor-header"><strong></strong></figcaption>
+</figure><br />Webot << <a href='Webot.html'>Previous</a> <a href='DistanceSensor Sensors.html'>Next</a> >> DistanceSensor Sensors</div>
         
     <!-- footer -->
       <div class="container">
