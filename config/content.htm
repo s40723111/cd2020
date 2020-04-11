@@ -315,6 +315,98 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 </figcaption>
 <figcaption class="anchor-header"><strong></strong></figcaption>
 </figure><h2>DistanceSensor Sensors</h2>
-<h2>Lidar Sensors</h2>
+<p>距離傳感器</p>
+<p>對於大多數應用程序而言，添加通用的<a href="https://cyberbotics.com/doc/reference/distancesensor">DistanceSensor</a>節點就足夠了，因為它們是可自定義的（分辨率，lookupTable，光圈等）。</p>
+<p>此外，Webot中提供了一些預定義的商業化模型，例如某些紅外傳感器。</p>
+<p>Index</p>
+<ul>
+<li><a href="https://cyberbotics.com/doc/guide/distancesensor-sensors#sharp">Sharp</a>
+<ul>
+<li><a href="https://cyberbotics.com/doc/guide/distancesensor-sensors#sharp-gp2d120">Sharp GP2D120</a></li>
+<li><a href="https://cyberbotics.com/doc/guide/distancesensor-sensors#sharp-gp2y0a02yk0f">Sharp GP2Y0A02YK0F</a></li>
+<li><a href="https://cyberbotics.com/doc/guide/distancesensor-sensors#sharp-gp2y0a41sk0f">Sharp GP2Y0A41SK0F</a></li>
+<li><a href="https://cyberbotics.com/doc/guide/distancesensor-sensors#sharp-gp2y0a710k0f">Sharp GP2Y0A710K0F</a></li>
+</ul>
+</li>
+</ul>
+<p>Sharp</p>
+<p>Sharp GP2D120</p>
+<p><img caption="false" height="128" src="/images/bandicam 2020-04-11 17-58-29-720.jpg" width="300"/></p>
+<p>Sharp GP2D120</p>
+<p><a href="https://www.pololu.com/file/0J157/GP2D120-DATA-SHEET.pdf">Sharp GP2D120</a>是具有集成的信號處理和模擬電壓輸出的距離測量傳感器。該設備輸出與檢測距離相對應的電壓。</p>
+<p>該型號具有以下規格：</p>
+<ul>
+<li>effective range：4至30 [cm]</li>
+<li>output type：模擬</li>
+<li>response time：39 [ms]</li>
+<li>start up delay：44 [毫秒]</li>
+<li>average consumption：33 [毫安]</li>
+</ul>
+<p></p>
+<p><img alt="" height="115" src="/images/bandicam%202020-04-11%2017-58-14-324.jpg" width="550"/></p>
+<p><a href="https://cyberbotics.com/doc/reference/distancesensor">DistanceSensor</a>的lookupTable字段已根據<span>數據表中</span>的特性實現。</p>
+<p>該wb_distance_sensor_get_value函數返回測量的電壓/強度。要轉換這些值，請使用以下公式：</p>
+<ul>
+<li>將米轉換為電壓：y(x) = 0.5131*x^(-0.5735)-0.6143</li>
+<li>將電壓轉換為米：y(x) = 0.1594*x^(-0.8533)-0.02916</li>
+</ul>
+<p>Sharp GP2Y0A02YK0F</p>
+<p><img caption="false" height="178" src="/images/bandicam 2020-04-11 17-58-01-894.jpg" width="300"/></p>
+<p>Sharp GP2Y0A02YK0F</p>
+<p><a href="https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a02yk_e.pdf">Sharp GP2Y0A02YK0F</a>是一個距離測量傳感器單元，PSD（位置敏感檢測器）中，一個集成的組合構成的IR-LED（紅外線發光二極管）和信號處理電路。由於採用三角測量法，物體的反射率，環境溫度和工作持續時間的變化不容易影響距離檢測。該設備輸出與檢測距離相對應的電壓。因此，該傳感器也可以用作接近傳感器。</p>
+<p>該型號具有以下規格：</p>
+<ul>
+<li>effective range：20至150 [cm]</li>
+<li>output type：模擬</li>
+<li>response time：33 [ms]</li>
+<li>start up delay：50 [ms]</li>
+<li>average consumption：33 [毫安]</li>
+</ul>
+<p><img alt="" height="115" src="/images/bandicam%202020-04-11%2017-58-20-580.jpg" width="550"/></p>
+<p><a href="https://cyberbotics.com/doc/reference/distancesensor">DistanceSensor</a>的lookupTable字段已根據<a href="https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a02yk_e.pdf"><span>數據表中</span></a>的特性實現。</p>
+<p>該wb_distance_sensor_get_value函數返回測量的電壓/強度。要轉換這些值，請使用以下公式：</p>
+<ul>
+<li>將米轉換為電壓：y(x) = 1.784*x^(-0.4215)-1.11</li>
+<li>將電壓轉換為米：y(x) = 0.7611*x^(-0.9313)-0.1252</li>
+</ul>
+<p>Sharp GP2Y0A41SK0F</p>
+<p><img alt="" height="128" src="/images/bandicam 2020-04-11 17-58-29-720.jpg" width="300"/></p>
+<p>Sharp GP2Y0A41SK0F</p>
+<p><a href="https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a41sk_e.pdf">Sharp GP2Y0A41SK0F</a>是一個距離測量傳感器單元，PSD（位置敏感檢測器）中，一個集成的組合構成的IR-LED（紅外線發光二極管）和信號處理電路。由於採用三角測量法，物體的反射率，環境溫度和工作持續時間的變化不容易影響距離檢測。該設備輸出與檢測距離相對應的電壓。因此，該傳感器也可以用作接近傳感器。</p>
+<p>該型號具有以下規格：</p>
+<ul>
+<li>effective range：4至30 [cm]</li>
+<li>output type：模擬</li>
+<li>response time：5 [ms]</li>
+<li>start up delay：26 [ms]</li>
+<li>average consumption：12 [mA]</li>
+</ul>
+<p><img alt="" height="118" src="/images/bandicam%202020-04-11%2017-58-37-926.jpg" width="550"/></p>
+<p><a href="https://cyberbotics.com/doc/reference/distancesensor">DistanceSensor</a>的lookupTable字段已根據<span>數據表中</span>的特性實現。</p>
+<p>該wb_distance_sensor_get_value函數返回測量的電壓/強度。要轉換這些值，請使用以下公式：</p>
+<ul>
+<li>將米轉換為電壓：y(x) = 0.5131*x^(-0.5735)-0.6143</li>
+<li>將電壓轉換為米：y(x) = 0.1594*x^(-0.8533)-0.02916</li>
+</ul>
+<p>Sharp GP2Y0A710K0F</p>
+<p><img alt="" height="127" src="/images/bandicam 2020-04-11 17-58-48-716.jpg" width="300"/></p>
+<p>GP2Y0A710K0F</p>
+<p><a href="https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a710k_e.pdf">Sharp GP2Y0A710K0F</a>是一個距離測量傳感器單元，PSD（位置敏感檢測器）中，一個集成的組合構成的IR-LED（紅外線發光二極管）和信號處理電路。由於採用三角測量法，物體的反射率，環境溫度和工作持續時間的變化不容易影響距離檢測。該設備輸出與檢測距離相對應的電壓。因此，該傳感器也可以用作接近傳感器。</p>
+<p>該型號具有以下規格：</p>
+<ul>
+<li>effective range：100至550 [cm]</li>
+<li>output type：模擬</li>
+<li>response time：21 [ms]</li>
+<li>start up delay：26 [ms]</li>
+<li>average consumption：30 [毫安]</li>
+</ul>
+<p><img caption="false" height="105" src="/images/bandicam 2020-04-11 17-58-58-196.jpg" width="550"/></p>
+<p><a href="https://cyberbotics.com/doc/reference/distancesensor">DistanceSensor</a>的lookupTable字段已根據<span>數據表中</span>的特性實現。</p>
+<p>該wb_distance_sensor_get_value函數返回測量的電壓/強度。要轉換這些值，請使用以下公式：</p>
+<ul>
+<li>將米轉換為電壓：y(x) = 1.962*x^(-0.5214)+0.4926</li>
+<li>將電壓轉換為米：y(x) = 20.24*x^(-4.76)+0.6632</li>
+</ul>
+<p> </p><h2>Lidar Sensors</h2>
 <h2>Radar Sensors</h2>
 <h2>RangeFinder Sensors</h2>
