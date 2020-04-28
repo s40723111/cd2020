@@ -39,15 +39,15 @@ CMSimfly 網際內容管理
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## CMSimfly 網際內容管理
+## 協同產品設計實習
 
-### KMOLab
+### 40723111
 
 <small>
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [40723111](https://s40723111.github.io/cd2020/content/index.html)
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
+
 
 
     </script>
@@ -57,15 +57,12 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
+## W1
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+創建[CD2020](https://github.com/s40723111/cd2020)
+的倉儲
 
+創建[網站](https://s40723111.github.io/cd2020/content/index.html)
     </script>
 </section>
 
@@ -75,12 +72,16 @@ Created by [KMOLab](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+## W2
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
+將python 3.7.3更新至3.8.2
 
-$$I = \int \rho R^{2} dV$$
+使用pip install指令
+安裝這些缺少的模組:
+
+Flask,Markdown,lxml,bs4,flask_cors,pelican,leo
+
+並放入可攜系統
     </script>
 </section>
 
@@ -90,32 +91,12 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+## W4
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+更新倉儲版本至3.8.2後
+
+解決launchLeo.py無法執行的問題
+
     </script>
 </section>
 
@@ -124,13 +105,108 @@ make.start()
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+## W6
 
-### 導入影片 template
+使用Youtube & OBS Portable進行直播串流
 
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+翻譯:
+
+[Camera Sensors](https://cyberbotics.com/doc/guide/camera-sensors)
+
+[DistanceSensor Sensors](https://cyberbotics.com/doc/guide/distancesensor-sensors)
     </script>
 </section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## W7
+
+使用Youtube & OBS Portable進行直播串流
+
+測試直播
+
+<iframe src="https://www.youtube.com/watch?v=hEZbNIzWe64&feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## W8
+
+下載[CoppeliaSim](https://www.coppeliarobotics.com/)，並放到可攜系統上
+
+將 leo 升級到6.2.1
+    </script>
+</section>
+
+
+
+						
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+## Py3.8.2
+下載[Python3.8.2](https://www.python.org/downloads/release/python-382/) 的Windows x86-64 executable installer版本，下載完後，執行安裝(將pip選項按掉)
+
+<iframe src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2019-47-16-328.jpg" width="600" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+						
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+### W2直播討論
+
+
+<iframe src="https://www.youtube.com/watch?time_continue=1215&v=e89PLiLRle8&feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+### W4直播討論
+
+<iframe src="youtube.com/watch?v=-MoaduLrKiI&feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+### W6直播討論
+
+<iframe src="https://www.youtube.com/watch?time_continue=1&v=ihUp_mp5FRY&feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+### W7直播討論
+
+<iframe src="https://www.youtube.com/watch?v=OSKbrzVS9cs&feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
 
 
 						
