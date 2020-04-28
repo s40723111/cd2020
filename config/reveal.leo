@@ -376,7 +376,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200428173516.2">## Py3.8.2
 下載[Python3.8.2](https://www.python.org/downloads/release/python-382/) 的Windows x86-64 executable installer版本，下載完後，執行安裝(將pip選項按掉)
 
-&lt;iframe src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2019-47-16-328.jpg" width="600" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;img src="https://s40723111.github.io/cd2020/images/bandicam%202020-03-11%2019-47-16-328.jpg" width="600" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20200428174309.1">&lt;section&gt;
 @others
