@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="https://chiamingyen.github.io/cmsimfly/blog/" rel="alternate"></link><link href="https://chiamingyen.github.io/cmsimfly/blog/feeds/misc.atom.xml" rel="self"></link><id>https://chiamingyen.github.io/cmsimfly/blog/</id><updated>2018-09-10T11:00:00+08:00</updated><entry><title>2018 Fall CP 課程</title><link href="https://chiamingyen.github.io/cmsimfly/blog/2018-Fall-32-bit-Windows.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:chiamingyen.github.io,2018-09-10:/cmsimfly/blog/2018-Fall-32-bit-Windows.html</id><summary type="html">&lt;p&gt;Leo Editor 已從當前的 6.1 版本更新成 6.2.1版&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;Leo Editor 已從當前的 6.1 版本更新成 6.2.1版&lt;/p&gt;
+
+
+&lt;p&gt;使用pip uninstall指令解除安裝Leo 6.1版本&lt;/p&gt;
+&lt;p&gt;在使用pip install leo==6.2.1&lt;/p&gt;
+&lt;p&gt;安裝Leo 6.2.1&lt;/p&gt;</content><category term="Misc"></category><category term="2018FallCP"></category></entry></feed>
