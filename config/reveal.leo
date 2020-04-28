@@ -344,9 +344,9 @@ vertical: body pane on the botton</t>
 
 使用Youtube &amp; OBS Portable進行直播串流
 
-測試直播
+[直播測試](https://www.youtube.com/watch?v=hEZbNIzWe64&amp;feature=emb_logo)
 
-&lt;iframe src="https://www.youtube.com/watch?v=hEZbNIzWe64&amp;feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hEZbNIzWe64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200428170744.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -397,7 +397,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200428174309.3">### W2直播討論
 
 
-&lt;iframe src="https://www.youtube.com/watch?time_continue=1215&amp;v=e89PLiLRle8&amp;feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
+ &lt;iframe width="700" height="550" src="https://www.youtube.com/embed/e89PLiLRle8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200428174309.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -411,8 +411,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200428174309.5">### W4直播討論
 
-&lt;iframe src="youtube.com/watch?v=-MoaduLrKiI&amp;feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+&lt;iframe width="700" height="550" src="https://www.youtube.com/embed/-MoaduLrKiI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200428174309.6">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -424,8 +423,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200428174309.7">### W6直播討論
 
-&lt;iframe src="https://www.youtube.com/watch?time_continue=1&amp;v=ihUp_mp5FRY&amp;feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+&lt;iframe width="700" height="550" src="https://www.youtube.com/embed/ihUp_mp5FRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200428174309.8">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -439,7 +437,6 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200428174309.9">### W7直播討論
 
-&lt;iframe src="https://www.youtube.com/watch?v=OSKbrzVS9cs&amp;feature=emb_logo" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+&lt;iframe width="700" height="550" src="https://www.youtube.com/embed/OSKbrzVS9cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
