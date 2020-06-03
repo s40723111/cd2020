@@ -154,11 +154,105 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w11 << <a href='w11.html'>Previous</a> <a href='w13.html'>Next</a> >> w13<br /><h1>w12</h1>
-<p>繪製輪框(雖然已經被畫完了)</p>
-<p>-<a href="https://cad.onshape.com/documents/5ea9e00840f85da94167c18f/w/3a4374f14d8845fb65a4cfd1/e/9c9fdd2fa14faf9e992ff00d">https://cad.onshape.com/documents/5ea9e00840f85da94167c18f/w/3a4374f14d8845fb65a4cfd1/e/9c9fdd2fa14faf9e992ff00d</a></p>
-<p><img caption="false" height="495" src="./../images/未命名.png" width="600"/></p>
-<br />w11 << <a href='w11.html'>Previous</a> <a href='w13.html'>Next</a> >> w13</div>
+    <div id="tipue_search_content">w13 << <a href='w13.html'>Previous</a> <a href='直播紀錄.html'>Next</a> >> 直播紀錄<br /><h1>w14</h1>
+<p>開啟虛擬主機遠端的操作步驟:</p>
+<p>1變更IPv6網路介面卡設定</p>
+<p>依照老師給的格式去設定<a href="https://github.com/mdecourse/cd2020/blob/master/downloads/w13_ipv6_assignment.txt">https://github.com/mdecourse/cd2020/blob/master/downloads/w13_ipv6_assignment.txt</a></p>
+<p>點選IPv6內容</p>
+<p><img alt="" height="506" src="http://mde.tw/cdaw14-2/images/bandicam%202020-06-03%2014-42-23-015.jpg" width="400"/></p>
+<p>改成下面的格式</p>
+<p><img alt="" height="411" src="http://mde.tw/cdaw14-2/images/bandicam%202020-06-03%2014-39-02-164.jpg" width="500"/></p>
+<p><span>2001:288:6006:17 為機械設計系網段</span></p>
+<p><span>2020 為年份  , 1 為 cda ,  71 為 407231 表示甲班 , 11 為我的學號</span></p>
+<p><span>----------------------------------------------------------------------------------------------</span></p>
+<p><span>2:開啟Virtual Box 進入網路設定</span></p>
+<p><span>在Ubuntu輸入</span></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_542316">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">ifconfig</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>查出Inet6的位址 並輸入進Guest IP位址</span></p>
+<p><span>3:進入cmsimde資料夾</span></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_764392">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">cd /home/kmol2020/tmp/cd2020pj1/docs/cmsimde</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>輸入</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_941911">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">vi wsgi.py</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>按insert編輯host設定 將它設定為查出來的I<span>net6的位址</span></p>
+<p><span>在按一次insert &gt; esc &gt; :wq儲存後退出</span></p>
+<p><span>4:輸入</span></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_491635">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">python3 wsgi.py</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>開啟虛擬主機中的遠端</span></p>
+<p><span>將此網址複製到Virtual Box 中的火狐瀏覽器 測試是否可開啟網頁</span></p>
+<p><span>如果內部可以開啟成功 表示內部的設定應該是對的 接著到外部使用自己設定的host IP 網址</span></p>
+<p><a href="https://[2001:288:6004:17:2020:1:0:7111]:19443"><span>https://[</span><span>2001:288:6004:17:2020:1::7111]:19443</span></a></p>
+<p><strong>注意! 要在外部開啟網站需要將proxy以及防火牆關閉!</strong></p>
+<p><span>試看看可不可以成功 (<span style="color: #ff0000;">然後我是失敗的!!!</span>)  經過討論後，還是不太確定真正的原因，還有待商榷。</span></p>
+<p><span>心得:這四節課上完我心很累，在做的過程中時常發生問題，一開始在使用ifconfig查找I<span>net6的位址出現問題</span>可能是Virtual Box 主機混亂而導致的，在重新啟動虛擬主機就可以了，第二個問題是在內部網路環境沒問題的情況下，外部的網路連接不到，還是不確定真正的原因。</span></p>
+<p></p><br />w13 << <a href='w13.html'>Previous</a> <a href='直播紀錄.html'>Next</a> >> 直播紀錄</div>
         
     <!-- footer -->
       <div class="container">
