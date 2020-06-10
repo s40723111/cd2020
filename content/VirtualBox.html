@@ -108,6 +108,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -153,4 +154,84 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='week.html'>week</a><ul><li><a href='w1.html'>w1</a><li><a href='w2.html'>w2</a><li><a href='w4.html'>w4</a><li><a href='w6.html'>w6</a><li><a href='w7.html'>w7</a><li><a href='w8.html'>w8</a><li><a href='w9.html'>w9</a><li><a href='w10.html'>w10</a><li><a href='w11.html'>w11</a><li><a href='w12.html'>w12</a><li><a href='w13.html'>w13</a><li><a href='w14.html'>w14</a></li></ul><li><a href='直播紀錄.html'>直播紀錄</a><li><a href='Webot.html'>Webot</a><ul><li><a href='Camera Sensors.html'>Camera Sensors</a><li><a href='DistanceSensor Sensors.html'>DistanceSensor Sensors</a></li></ul><li><a href='VirtualBox.html'>VirtualBox</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">DistanceSensor Sensors << <a href='DistanceSensor Sensors.html'>Previous</a> <br /><h1>VirtualBox</h1>
+<h4>(IPv6) Setting VirtualBox Network</h4>
+<p>1.</p>
+<p>設定調成NAT Network</p>
+<p><img alt="" height="335" src="./../images/1.png" width="500"/></p>
+<p>2.</p>
+<p>打這個指令尋找IPv6網路(找不到的話繼續下面的步驟)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p><img alt="" height="325" src="./../images/2.png" width="500"/></p>
+<p>3.</p>
+<p>安裝網路工具，密碼為kmol2020</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p><img alt="" height="326" src="./../images/3.png" width="500"/></p>
+<p>4.</p>
+<p><span>到 /etc/netplan檢查00-installer-config.yaml 檔案內的設定</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/netplan
+sudo vi 00-installer-config.yaml</pre>
+<p><img alt="" height="326" src="./../images/12.png" width="500"/></p>
+<p>5.</p>
+<p><span>將00-installer-config.yaml</span>設定改為這樣<img alt="" height="325" src="./../images/6.png" width="500"/></p>
+<p>編輯完成後按insert退出編輯&gt;esc&gt;:wq<span>跳出編輯並儲存，並更新netplan設定</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo netplan apply</pre>
+<p>6.</p>
+<p><span>到 /etc/apt/apt.conf.d 目錄下檢查是否有proxy.conf檔案</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/apt/apt.conf.d
+sudo vi proxy.conf</pre>
+<p><img alt="" height="326" src="./../images/13.png" width="500"/></p>
+<p>7.</p>
+<p><span>proxy.conf的檔案內容</span></p>
+<p><span>53為proxy的port號</span></p>
+<p><span><img alt="" height="325" src="./../images/10.png" width="500"/></span></p>
+<p><span>新增完內容更新apt</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
+<p>8.</p>
+<p>再試一次ifconfig尋找IPv6網路</p>
+<p>紅線為尋找的IPv6的位址</p>
+<p><img alt="" height="326" src="./../images/14.png" width="500"/></p>
+<p></p>
+<p><img caption="false" height="0" src="./../images/2.png" width="500"/></p><br />DistanceSensor Sensors << <a href='DistanceSensor Sensors.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

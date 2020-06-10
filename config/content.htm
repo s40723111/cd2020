@@ -290,7 +290,8 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p>側視圖</p>
 <p><img alt="" height="450" src="/images/bandicam 2020-06-09 23-54-44-250.jpg" width="500"/></p>
 <p>剖視圖</p>
-<p><img alt="" height="410" src="/images/bandicam 2020-06-09 23-54-13-869.jpg" width="500"/></p><h2>w14</h2>
+<p><img alt="" height="410" src="/images/bandicam 2020-06-09 23-54-13-869.jpg" width="500"/></p>
+<h2>w14</h2>
 <p>開啟虛擬主機遠端的操作步驟:</p>
 <p>1變更IPv6網路介面卡設定</p>
 <p>依照老師給的格式去設定<a href="https://github.com/mdecourse/cd2020/blob/master/downloads/w13_ipv6_assignment.txt">https://github.com/mdecourse/cd2020/blob/master/downloads/w13_ipv6_assignment.txt</a></p>
@@ -388,7 +389,8 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p><strong>注意! 要在外部開啟網站需要將proxy以及防火牆關閉!</strong></p>
 <p><span>試看看可不可以成功 (<span style="color: #ff0000;">然後我是失敗的!!!</span>)  經過討論後，還是不太確定真正的原因，還有待商榷。</span></p>
 <p><span>心得:這四節課上完我心很累，在做的過程中時常發生問題，一開始在使用ifconfig查找I<span>net6的位址出現問題</span>可能是Virtual Box 主機混亂而導致的，在重新啟動虛擬主機就可以了，第二個問題是在內部網路環境沒問題的情況下，外部的網路連接不到，還是不確定真正的原因。</span></p>
-<p></p><h1>直播紀錄</h1>
+<p></p>
+<h1>直播紀錄</h1>
 <p>w2</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/e89PLiLRle8" width="560"></iframe></p>
 <p>w4</p>
@@ -441,7 +443,9 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p><span><span>該</span></span><code>enablePhysics</code><span><span>字段指定傳感器是否應受物理影響（質量= 1.5 [kg]）。</span></span></p>
 <p></p>
 </figcaption>
-</figure></figcaption></figure>
+</figure>
+</figcaption>
+</figure>
 <p><strong></strong></p>
 <h2>DistanceSensor Sensors</h2>
 <p>距離傳感器</p>
@@ -536,3 +540,42 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <li>將米轉換為電壓：y(x) = 1.962*x^(-0.5214)+0.4926</li>
 <li>將電壓轉換為米：y(x) = 20.24*x^(-4.76)+0.6632</li>
 </ul>
+<h1>VirtualBox</h1>
+<h4>(IPv6) Setting VirtualBox Network</h4>
+<p>1.</p>
+<p>設定調成NAT Network</p>
+<p><img alt="" height="335" src="/images/1.png" width="500"/></p>
+<p>2.</p>
+<p>打這個指令尋找IPv6網路(找不到的話繼續下面的步驟)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p><img alt="" height="325" src="/images/2.png" width="500"/></p>
+<p>3.</p>
+<p>安裝網路工具，密碼為kmol2020</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p><img alt="" height="326" src="/images/3.png" width="500"/></p>
+<p>4.</p>
+<p><span>到 /etc/netplan檢查00-installer-config.yaml 檔案內的設定</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/netplan
+sudo vi 00-installer-config.yaml</pre>
+<p><img alt="" height="326" src="/images/12.png" width="500"/></p>
+<p>5.</p>
+<p><span>將00-installer-config.yaml</span>設定改為這樣<img alt="" height="325" src="/images/6.png" width="500"/></p>
+<p>編輯完成後按insert退出編輯&gt;esc&gt;:wq<span>跳出編輯並儲存，並更新netplan設定</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo netplan apply</pre>
+<p>6.</p>
+<p><span>到 /etc/apt/apt.conf.d 目錄下檢查是否有proxy.conf檔案</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/apt/apt.conf.d
+sudo vi proxy.conf</pre>
+<p><img alt="" height="326" src="/images/13.png" width="500"/></p>
+<p>7.</p>
+<p><span>proxy.conf的檔案內容</span></p>
+<p><span>53為proxy的port號</span></p>
+<p><span><img alt="" height="325" src="/images/10.png" width="500"/></span></p>
+<p><span>新增完內容更新apt</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
+<p>8.</p>
+<p>再試一次ifconfig尋找IPv6網路</p>
+<p>紅線為尋找的IPv6的位址</p>
+<p><img alt="" height="326" src="/images/14.png" width="500"/></p>
+<p></p>
+<p><img caption="false" height="0" src="/images/2.png" width="500"/></p>
