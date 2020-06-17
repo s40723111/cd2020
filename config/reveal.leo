@@ -21,7 +21,6 @@
 <v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11"><vh>W1</vh></v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20200617100408.1"><vh>W1</vh>
 <v t="leo.20200617100408.2"><vh>W1</vh></v>
@@ -110,15 +109,6 @@ Created by [40723111](https://github.com/s40723111/cd2020)
 
 
 
-</t>
-<t tx="leo.20180902120523.11">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
