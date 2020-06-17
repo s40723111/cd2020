@@ -21,10 +21,11 @@
 <v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11"><vh>W1</vh>
-<v t="leo.20180902120523.12"><vh>w1</vh></v>
-</v>
+<v t="leo.20180902120523.11"><vh>W1</vh></v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
+<v t="leo.20200617100408.1"><vh>W1</vh>
+<v t="leo.20200617100408.2"><vh>W1</vh></v>
+</v>
 <v t="leo.20180902120523.14"><vh>W2</vh>
 <v t="leo.20180902120523.15"><vh>W2</vh></v>
 </v>
@@ -44,6 +45,26 @@
 <v t="leo.20200428173516.1"><vh>py382</vh>
 <v t="leo.20200428173516.2"><vh>投影片快捷鍵</vh></v>
 </v>
+<v t="leo.20200617100801.1"><vh>各式內容引用範例</vh>
+<v t="leo.20200617100801.2"><vh>W10</vh>
+<v t="leo.20200617100801.3"><vh>W10</vh></v>
+</v>
+<v t="leo.20200617101048.1"><vh>W11</vh>
+<v t="leo.20200617101048.2"><vh>W11</vh></v>
+</v>
+<v t="leo.20200617101401.1"><vh>W13</vh>
+<v t="leo.20200617101401.2"><vh>W13</vh></v>
+</v>
+<v t="leo.20200617101820.1"><vh>W14</vh>
+<v t="leo.20200617101820.2"><vh>W14</vh></v>
+</v>
+<v t="leo.20200617102026.1"><vh>W15</vh>
+<v t="leo.20200617102026.2"><vh>W15</vh></v>
+</v>
+</v>
+<v t="leo.20200617102536.1"><vh>VirtualBox</vh>
+<v t="leo.20200617102536.2"><vh>投影片快捷鍵</vh></v>
+</v>
 <v t="leo.20200428174309.1"><vh>各式內容引用範例</vh>
 <v t="leo.20200428174309.2"><vh>W2</vh>
 <v t="leo.20200428174309.3"><vh>W2</vh></v>
@@ -56,6 +77,12 @@
 </v>
 <v t="leo.20200428174309.8"><vh>W7</vh>
 <v t="leo.20200428174309.9"><vh>W7</vh></v>
+</v>
+<v t="leo.20200617104330.1"><vh>W10</vh>
+<v t="leo.20200617104330.2"><vh>W10</vh></v>
+</v>
+<v t="leo.20200617104406.1"><vh>W13</vh>
+<v t="leo.20200617104406.2"><vh>W13</vh></v>
 </v>
 </v>
 </v>
@@ -73,7 +100,11 @@
 ### 40723111
 
 &lt;small&gt;
-Created by [40723111](https://s40723111.github.io/cd2020/content/index.html)
+Created by [40723111](https://github.com/s40723111/cd2020)
+&lt;hr&gt;
+[Repository](https://github.com/s40723111/cd2020)
+
+[website](https://s40723111.github.io/cd2020/content/index.html)
 &lt;/small&gt;
 
 
@@ -89,12 +120,6 @@ Created by [40723111](https://s40723111.github.io/cd2020/content/index.html)
 
 						
 </t>
-<t tx="leo.20180902120523.12">## W1
-
-創建[CD2020](https://github.com/s40723111/cd2020)
-的倉儲
-
-創建[網站](https://s40723111.github.io/cd2020/content/index.html)</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -438,5 +463,162 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200428174309.9">### W7直播討論
 
 &lt;iframe width="700" height="550" src="https://www.youtube.com/embed/OSKbrzVS9cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200617100408.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617100408.2"># 期中(1~8週)
+## W1
+
+創建[CD2020](https://github.com/s40723111/cd2020)
+的倉儲
+
+創建[網站](https://s40723111.github.io/cd2020/content/index.html)
+</t>
+<t tx="leo.20200617100801.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200617100801.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617100801.3"># 期末(12~18週)
+## W10
+
+直播分配工作
+
+google API設立權限
+</t>
+<t tx="leo.20200617101048.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617101048.2">## W11
+
+&lt;small&gt;
+在家裡使用ssh推送時遇到的問題
+
+&lt;img src="https://s40723111.github.io/cd2020/images/777.png" width="600" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200617101401.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617101401.2">## W13
+
+&lt;small&gt;
+完成小組分配功課--繪製輪胎皮和避震器
+
+[輪胎皮](https://cad.onshape.com/documents/b4e6fb2c5716ec781acdc5a8/w/60a600cf6c1f6f25a68f9004/e/18a774a6ca3c5bab20a49d61)、
+[避震器](https://cad.onshape.com/documents/cdd3bd6f66bd8440fccd078a/w/4e233bb934693aeb5bb715a1/e/3d34edd0702ec5f16c3f8c2f)
+
+
+&lt;img src="https://s40723111.github.io/cd2020/images/bandicam%202020-06-09%2023-53-16-022.jpg" width="700" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20200617101820.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617101820.2">## W14
+
+&lt;small&gt;
+心得:這四節課上完我心很累，在做的過程中時常發生問題，一開始在使用ifconfig查找Inet6的位址出現問題可能是Virtual Box 主機混亂而導致的，在重新啟動虛擬主機就可以了，第二個問題是在內部網路環境沒問題的情況下，外部的網路連接不到，還是不確定真正的原因(可能是VirtualBox裡面的設定跑掉)。</t>
+<t tx="leo.20200617102026.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617102026.2">## W15
+
+&lt;small&gt;
+虛擬主機遠端的[操作步驟](https://s40723111.github.io/cd2020/content/w14.html)
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oX3Ft7vwnRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200617102536.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617102536.2">## VirtualBox
+
+虛擬主機中IPv6設定
+
+[設定步驟](https://s40723111.github.io/cd2020/content/VirtualBox.html)
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lEExqp_LEFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200617104330.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617104330.2">### W10直播討論
+
+&lt;iframe width="700" height="550" src="https://www.youtube.com/embed/qvnw7KaMm_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200617104406.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200617104406.2">### W13直播討論
+
+&lt;iframe width="700" height="550" src="https://www.youtube.com/embed/xFM1NzUYCZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
