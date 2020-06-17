@@ -543,6 +543,7 @@ google API設立權限
 
 
 &lt;img src="https://s40723111.github.io/cd2020/images/bandicam%202020-06-09%2023-53-16-022.jpg" width="700" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;img src="https://s40723111.github.io/cd2020/images/55555555.png" width="200" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20200617101820.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
