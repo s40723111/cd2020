@@ -51,6 +51,9 @@
 <v t="leo.20200617101048.1"><vh>W11</vh>
 <v t="leo.20200617101048.2"><vh>W11</vh></v>
 </v>
+<v t="leo.20200623214808.1"><vh>W12</vh>
+<v t="leo.20200623214808.2"><vh>W12</vh></v>
+</v>
 <v t="leo.20200617101401.1"><vh>W13</vh>
 <v t="leo.20200617101401.2"><vh>W13</vh></v>
 </v>
@@ -59,6 +62,9 @@
 </v>
 <v t="leo.20200617102026.1"><vh>W15</vh>
 <v t="leo.20200617102026.2"><vh>W15</vh></v>
+</v>
+<v t="leo.20200623221850.1"><vh>W16</vh>
+<v t="leo.20200623221850.2"><vh>W16</vh></v>
 </v>
 </v>
 <v t="leo.20200617102536.1"><vh>VirtualBox</vh>
@@ -488,7 +494,7 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200617100801.3"># 期末(12~18週)
+<t tx="leo.20200617100801.3"># 期末(10~18週)
 ## W10
 
 直播分配工作
@@ -507,10 +513,12 @@ google API設立權限
 						
 </t>
 <t tx="leo.20200617101048.2">## W11
-
+下載[Virtualbox appliance of Ubuntu 20.04](https://drive.google.com/open?id=143jFMheM1xjLxhLkSAouThLzj3WUYX6_)
 &lt;small&gt;
-在家裡使用ssh推送時遇到的問題
 
+開啟Oracle VM VirtualBox將Ubuntu檔案匯入
+
+在家裡使用ssh推送時遇到的問題
 &lt;img src="https://s40723111.github.io/cd2020/images/777.png" width="600" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617101401.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -548,7 +556,11 @@ google API設立權限
 </t>
 <t tx="leo.20200617101820.2">## W14
 
+mini project (cdaw14-2)
 &lt;small&gt;
+
+[倉儲](https://github.com/mdecourse/cdaw14-2)&amp;[網站](http://mde.tw/cdaw14-2/content/index.html)
+
 心得:這四節課上完我心很累，在做的過程中時常發生問題，一開始在使用ifconfig查找Inet6的位址出現問題可能是Virtual Box 主機混亂而導致的，在重新啟動虛擬主機就可以了，第二個問題是在內部網路環境沒問題的情況下，外部的網路連接不到，還是不確定真正的原因(可能是VirtualBox裡面的設定跑掉)。</t>
 <t tx="leo.20200617102026.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -563,8 +575,11 @@ google API設立權限
 </t>
 <t tx="leo.20200617102026.2">## W15
 
-&lt;small&gt;
-虛擬主機遠端的[操作步驟](https://s40723111.github.io/cd2020/content/w14.html)
+mini project (cdaw15-3)&lt;small&gt;
+
+[倉儲](https://github.com/mdecourse/cdaw15-3)&amp;[網站](http://mde.tw/cdaw15-3/content/)
+
+IPv6網路下虛擬主機遠端的[操作步驟](https://s40723111.github.io/cd2020/content/w14.html)
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oX3Ft7vwnRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617102536.1">&lt;section data-markdown&gt;
@@ -611,5 +626,45 @@ google API設立權限
 <t tx="leo.20200617104406.2">### W13直播討論
 
 &lt;iframe width="700" height="550" src="https://www.youtube.com/embed/xFM1NzUYCZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200623214808.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200623214808.2">## W12
+
+上課進行分組協同
+
+mini project (cdaw12-1)
+&lt;small&gt;
+
+
+[倉儲](https://github.com/mdecourse/cdaw12-1)&amp;[網站](http://mde.tw/cdaw12-1/content/index.html)
+</t>
+<t tx="leo.20200623221850.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200623221850.2">## W16
+
+mini project (cdaw16-1)
+&lt;small&gt;
+
+[倉儲](https://github.com/mdecourse/cdaw16-1)&amp;[網站](http://mde.tw/cdaw16-1/content/index.html)
+
+</t>
 </tnodes>
 </leo_file>
