@@ -554,10 +554,10 @@ google API設立權限
 
 mini project (cdaw14-2)
 &lt;small&gt;
-&lt;hr&gt;
+
 [倉儲](https://github.com/mdecourse/cdaw14-2)&amp;[網站](http://mde.tw/cdaw14-2/content/index.html)
 
-心得:這四節課上完我心很累，在做的過程中時常發生問題，一開始在使用ifconfig查找Inet6的位址出現問題可能是Virtual Box 主機混亂而導致的，在重新啟動虛擬主機就可以了，第二個問題是在內部網路環境沒問題的情況下，外部的網路連接不到，還是不確定真正的原因(可能是VirtualBox裡面的設定跑掉)。</t>
+&lt;hr&gt;心得:這四節課上完我心很累，在做的過程中時常發生問題，一開始在使用ifconfig查找Inet6的位址出現問題可能是Virtual Box 主機混亂而導致的，在重新啟動虛擬主機就可以了，第二個問題是在內部網路環境沒問題的情況下，外部的網路連接不到，還是不確定真正的原因(可能是VirtualBox裡面的設定跑掉)。</t>
 <t tx="leo.20200617102026.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -592,7 +592,7 @@ IPv6網路下虛擬主機遠端的操作影片
 
 虛擬主機中IPv6設定
 
-[設定步驟](https://s40723111.github.io/cd2020/content/VirtualBox.html)
+&lt;small&gt;[設定步驟](https://s40723111.github.io/cd2020/content/VirtualBox.html)
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lEExqp_LEFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617104330.1">&lt;section data-markdown&gt;
