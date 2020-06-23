@@ -63,6 +63,9 @@
 <v t="leo.20200617102026.1"><vh>W15</vh>
 <v t="leo.20200617102026.2"><vh>W15</vh></v>
 </v>
+<v t="leo.20200623233805.1"><vh>W15</vh>
+<v t="leo.20200623233805.2"><vh>W15</vh></v>
+</v>
 <v t="leo.20200623221850.1"><vh>W16</vh>
 <v t="leo.20200623221850.2"><vh>W16</vh></v>
 </v>
@@ -100,22 +103,18 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## 協同產品設計實習
+<t tx="leo.20180902120523.10">###  協同產品設計實習
 
-### 40723111
-
-&lt;small&gt;
 Created by [40723111](https://github.com/s40723111/cd2020)
 &lt;hr&gt;
-[Repository](https://github.com/s40723111/cd2020)
+[blog](https://s40723111.github.io/cd2020/blog/index.html)
 
 [website](https://s40723111.github.io/cd2020/content/index.html)
-&lt;/small&gt;
 
+[Repository](https://github.com/s40723111/cd2020)
 
-
-
-</t>
+&lt;hr&gt;
+&lt;marquee direction=left&gt;40723111李其叡&lt;/marquee&gt; &lt;br /&gt; &lt;marquee loop=10000000&gt;&lt;/marquee&gt; &lt;br /&gt; </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -513,12 +512,9 @@ google API設立權限
 						
 </t>
 <t tx="leo.20200617101048.2">## W11
-下載[Virtualbox appliance of Ubuntu 20.04](https://drive.google.com/open?id=143jFMheM1xjLxhLkSAouThLzj3WUYX6_)
-&lt;small&gt;
+&lt;small&gt;下載[Virtualbox appliance of Ubuntu 20.04](https://drive.google.com/open?id=143jFMheM1xjLxhLkSAouThLzj3WUYX6_)匯入Oracle VM VirtualBox
 
-開啟Oracle VM VirtualBox將Ubuntu檔案匯入
-
-在家裡使用ssh推送時遇到的問題
+&lt;hr&gt;在家裡使用ssh推送時遇到的問題
 &lt;img src="https://s40723111.github.io/cd2020/images/777.png" width="600" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617101401.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -558,7 +554,7 @@ google API設立權限
 
 mini project (cdaw14-2)
 &lt;small&gt;
-
+&lt;hr&gt;
 [倉儲](https://github.com/mdecourse/cdaw14-2)&amp;[網站](http://mde.tw/cdaw14-2/content/index.html)
 
 心得:這四節課上完我心很累，在做的過程中時常發生問題，一開始在使用ifconfig查找Inet6的位址出現問題可能是Virtual Box 主機混亂而導致的，在重新啟動虛擬主機就可以了，第二個問題是在內部網路環境沒問題的情況下，外部的網路連接不到，還是不確定真正的原因(可能是VirtualBox裡面的設定跑掉)。</t>
@@ -578,10 +574,11 @@ mini project (cdaw14-2)
 mini project (cdaw15-3)&lt;small&gt;
 
 [倉儲](https://github.com/mdecourse/cdaw15-3)&amp;[網站](http://mde.tw/cdaw15-3/content/)
+&lt;hr&gt;
+IPv6網路下虛擬主機遠端的操作影片
 
-IPv6網路下虛擬主機遠端的[操作步驟](https://s40723111.github.io/cd2020/content/w14.html)
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oX3Ft7vwnRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oX3Ft7vwnRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
 <t tx="leo.20200617102536.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -642,7 +639,6 @@ IPv6網路下虛擬主機遠端的[操作步驟](https://s40723111.github.io/cd2
 上課進行分組協同
 
 mini project (cdaw12-1)
-&lt;small&gt;
 
 
 [倉儲](https://github.com/mdecourse/cdaw12-1)&amp;[網站](http://mde.tw/cdaw12-1/content/index.html)
@@ -665,6 +661,22 @@ mini project (cdaw16-1)
 
 [倉儲](https://github.com/mdecourse/cdaw16-1)&amp;[網站](http://mde.tw/cdaw16-1/content/index.html)
 
+</t>
+<t tx="leo.20200623233805.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200623233805.2">
+&lt;small&gt;
+IPv6網路下虛擬主機遠端的操作步驟
+&lt;iframe src="https://s40723111.github.io/cd2020/content/w14.html" width="900" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 </tnodes>
 </leo_file>
