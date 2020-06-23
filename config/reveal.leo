@@ -133,15 +133,9 @@ Created by [40723111](https://github.com/s40723111/cd2020)
 </t>
 <t tx="leo.20180902120523.15">## W2
 
-將python 3.7.3更新至3.8.2
+&lt;small&gt;將python 3.7.3更新至3.8.2 並安裝缺少的模組
 
-使用pip install指令
-安裝這些缺少的模組:
-
-Flask,Markdown,lxml,bs4,flask_cors,pelican,leo
-
-並放入可攜系統
-</t>
+&lt;iframe src="https://s40723111.github.io/cd2020/content/w2.html" width="900" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -155,11 +149,9 @@ Flask,Markdown,lxml,bs4,flask_cors,pelican,leo
 </t>
 <t tx="leo.20180902120523.17">## W4
 
-更新倉儲版本至3.8.2後
+&lt;small&gt;解決launchLeo.py無法執行的問題 
 
-解決launchLeo.py無法執行的問題
-
-</t>
+&lt;iframe src="https://s40723111.github.io/cd2020/content/w4.html" width="900" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -171,7 +163,11 @@ Flask,Markdown,lxml,bs4,flask_cors,pelican,leo
 </t>
 <t tx="leo.20180902120523.19">## W6
 
-使用Youtube &amp; OBS Portable進行直播串流
+&lt;small&gt;使用Youtube &amp; OBS Portable進行直播串流
+
+&lt;iframe src="https://s40723111.github.io/cd2020/content/w6.html" width="900" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+
 
 翻譯:
 
@@ -362,11 +358,15 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200428170454.2">## W7
 
-使用Youtube &amp; OBS Portable進行直播串流
+翻譯&amp;進行直播測試
 
-[直播測試](https://www.youtube.com/watch?v=hEZbNIzWe64&amp;feature=emb_logo)
+[Camera Sensors](https://cyberbotics.com/doc/guide/camera-sensors)
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hEZbNIzWe64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+[DistanceSensor Sensors](https://cyberbotics.com/doc/guide/distancesensor-sensors)
+&lt;hr&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hEZbNIzWe64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+</t>
 <t tx="leo.20200428170744.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
